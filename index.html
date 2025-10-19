@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8CVM55347"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C8CVM55347');
-</script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,8 +28,18 @@
     }
 
     h1 {
-      margin: 9px 0;
-      font-size: 2.2em;
+      margin: 10px 0;
+      font-size: 2.3em;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    header h1 {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff8bb0, #ffb6c1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
     }
 
     main {
@@ -102,6 +103,32 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffb6c1;
+      color: white;
+      border-top: 5px solid #ff8bb0;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+
+    footer img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 15px;
+      margin-top: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
     .whatsapp-float {
       position: fixed;
       width: 60px;
@@ -135,14 +162,13 @@
       }
     }
   </style>
-  <!-- Ícono de WhatsApp -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <header>
     <img src="salon.jpg" alt="MakyLash Studio" class="salon">
-    <h1>✨ MakyLash Studio ✨</h1>
+    <h1>✨ MakyLash Estudio ✨</h1>
     <p>Realza tu belleza natural con una mirada perfecta 💖</p>
   </header>
 
@@ -179,17 +205,21 @@
     <p style="text-align:center; font-weight:bold; color:#e75480;">✨ En MakyLash, tu mirada es nuestra prioridad. ¡Ven a consentirte y luce una belleza única cada día! ✨</p>
   </main>
 
+  <footer>
+    <h3>🕒 Horario de Atención</h3>
+    <p>Abierto todos los días de <strong>lunes a domingo</strong></p>
+    <p>De <strong>9:00 a.m.</strong> a <strong>5:00 p.m.</strong></p>
+
+    <h3>📍 Ubicación</h3>
+    <p>Remedios, Villa Clara, Cuba</p>
+    <a href="https://www.google.com/maps/place/Remedios,+Villa+Clara,+Cuba" target="_blank" style="color:white; text-decoration:underline;">Ver en Google Maps</a>
+    <br>
+    <img src="mapa-remedios.jpg" alt="Mapa de Remedios, Villa Clara">
+  </footer>
+
   <a href="https://wa.me/5363163432" target="_blank" class="whatsapp-float">
     <i class="fab fa-whatsapp"></i>
   </a>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
